@@ -38,16 +38,11 @@ Cppstepin.exe /input CSourcecode.cpp /output CSourceCodeInstrumented.cpp
 
 | Name     | Mandatory | Default |Description |
 |----------|-----------| ------- |-----------------------------------------------------------------------------------------|
-| Input    |     Y     |         | Input file name that is going to be instrumented |
-|--------------------------------------------------------------------------------------------------------------------------|
-| Output   |           |         | Output file name to which the instrumented code will be written  
-|--------------------------------------------------------------------------------------------------------------------------|
+| Input    |     Y     |         | Input file name that is going to be instrumented                                        |
+| Output   |           |         | Output file name to which the instrumented code will be written                         |
 | I        |           |         | Defines Include directory for compiler                                                  |
-|--------------------------------------------------------------------------------------------------------------------------|
 | D        |           |         | Pre-processor definition for compiler                                                   |
-|--------------------------------------------------------------------------------------------------------------------------|
 | Function |           | CLK     | Instrumented function name                                                              |
-|--------------------------------------------------------------------------------------------------------------------------|
 | Clock    |           |         | Name of the clock file. About clock file read below                                     |
 |--------------------------------------------------------------------------------------------------------------------------|
 
