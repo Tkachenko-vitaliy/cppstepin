@@ -30,10 +30,10 @@ CLK(2); //1 assignment step, 1 ‘new’ operation step
 
 Setup parameters are set via command line parameters. Command line parameters are assigned as set of pairs
 
-<Key> <Value>,                 
+\<Key\> \<Value\>,                 
 
-where <key> is a name of parameter with key flag (key-incensitive). Key flag is a symbol ‘–‘  or ‘/’ ;
-<Value> is a parameter value. Some values are optional, some are necessary.
+where \<key\> is a name of parameter with key flag (case-incensitive). Key flag is a symbol ‘–‘  or ‘/’ ;
+\<Value\> is a parameter value. Some values are optional, some are necessary.
 
 Example:
 Cppstepin.exe /input CSourcecode.cpp /output CSourceCodeInstrumented.cpp
