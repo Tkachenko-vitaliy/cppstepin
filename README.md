@@ -57,7 +57,7 @@ Cppstepin.exe /input CSourcecode.cpp /output CSourceCodeInstrumented.cpp
 
 1.	Install clang  http://clang.llvm.org/. 
 The application was developped with LLVM 6.0.1. As LLVM has not stable interface, on the later version the application might not be compiled. Write me at that case – I will correct the code.
-2.	In CMakeLists.txt, correct paths for LLVM.
+2.	In CMakeLists.txt, correct paths for LLVM (LLVM and LLVM_lib).
 3.	Set cppstepin as active directory.
 4.	Run project generation.  
 For Windows, run CMake –G “Visual studio 15” ./src. It generates solution for Visual Studio. Open cppstepin.sln and compile the project.
