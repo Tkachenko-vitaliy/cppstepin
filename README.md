@@ -51,7 +51,7 @@ Cppstepin.exe /input CSourcecode.cpp /output CSourceCodeInstrumented.cpp
 | Extern   |           |         | Additional “extern” definition that will be added to the instrumenting file             |
 | Step     |           | 1       | A number of steps after that instrumenting function call will be injected into source code|
 |Statement |           | 1       | A number of statements after that instrumenting function call will be injected into source code|
-|--------------------------------------------------------------------------------------------------------------------------|
+
 
 #Installation
 
