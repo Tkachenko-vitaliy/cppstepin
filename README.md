@@ -69,5 +69,5 @@ For Windows, run CMake –G “Visual studio 15” ./src. It generates solution 
 For Linux, cmake -G "Unix Makefiles" ./src. After that, run make.
 
 
-
+If you have quiestions, write me to Tkachenko_vitaliy@hotmail.com
 
