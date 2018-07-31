@@ -11,18 +11,18 @@ Output data: Instrumented C++ source code file.
 
 Let we have a code part:
 
-Int x = 0, y=0; //2 assignment operations
-Int z = x + y;  //1 addition and 1 assignment operation
-Char* p = new char[50]; //1 assignment step, 1 ‘new’ operation 
- 
+int x = 0, y=0; //2 assignment operations
+int z = x + y;  //1 addition and 1 assignment operation
+char* p = new char[50]; //1 assignment step, 1 ‘new’ operation 
+
 The instrumenter will insert the following calls:
 
-Int x = 0, y=0; 
-Clk(2); //2 assignment steps
-Int z = x + y;  
-Clk (2); //1 addition step and 1 assignment step
-Char* p = new char[50]; 
-Clk(2); //1 assignment step, 1 ‘new’ operation step
+int x = 0, y=0; 
+CLK(2); //2 assignment steps
+int z = x + y;  
+CLK(2); //1 addition step and 1 assignment step
+char* p = new char[50]; 
+CLK(2); //1 assignment step, 1 ‘new’ operation step
 
 # Setup parameters
 
@@ -36,12 +36,11 @@ where <key> is a name of parameter with key flag (key-incensitive). Key flag is 
 Example:
 Cppstepin.exe /input CSourcecode.cpp /output CSourceCodeInstrumented.cpp
 
-| Name     | Mandatory | Default |                      Description                                                        |
+| Name     | Mandatory | Default |Description |
 |----------|-----------| ------- |-----------------------------------------------------------------------------------------|
-| Input    |     Y     |         |Input file name that is going to be instrumented                                         |
+| Input    |     Y     |         | Input file name that is going to be instrumented |
 |--------------------------------------------------------------------------------------------------------------------------|
-| Output   |           |         | Output file name to which the instrumented code will be written. 
-If this parameter is omitted, the input file will be overwritten with instrumented file.| 
+| Output   |           |         | Output file name to which the instrumented code will be written  
 |--------------------------------------------------------------------------------------------------------------------------|
 | I        |           |         | Defines Include directory for compiler                                                  |
 |--------------------------------------------------------------------------------------------------------------------------|
@@ -51,7 +50,8 @@ If this parameter is omitted, the input file will be overwritten with instrument
 |--------------------------------------------------------------------------------------------------------------------------|
 | Clock    |           |         | Name of the clock file. About clock file read below                                     |
 |--------------------------------------------------------------------------------------------------------------------------|
-|
+
+
 
 
 
