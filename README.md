@@ -52,8 +52,13 @@ Cppstepin.exe /input CSourcecode.cpp /output CSourceCodeInstrumented.cpp
 | Step     |           | 1       | A number of steps after that instrumenting function call will be injected into source code|
 |Statement |           | 1       | A number of statements after that instrumenting function call will be injected into source code|
 
+# Clock file
+In the clock file step weights are described. Step weight is a numeric value that increments step counter. The clock file consists of set of pairs ‘step’ ‘weight’, where ‘step’ is a step name, ‘weight’ is its weight. Step name is a symbolic name,  that is the same as operation C++ code. For example, +, -, *, new and so on. You can create clock file and see all steps that are supported.
+If clock file is not assigned, or in clock file the step is not described, default weight value is 1.
+If in the clock file there is a step that is not a C++ operation, it is interpreted as some function name. 
 
-#Installation
+
+# Installation
 
 1.	Install clang  http://clang.llvm.org/. 
 The application was developped with LLVM 6.0.1. As LLVM has not stable interface, on the later version the application might not be compiled. Write me at that case – I will correct the code.
