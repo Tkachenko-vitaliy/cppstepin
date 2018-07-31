@@ -1,7 +1,5 @@
 # C++ step instrumenter
 
-# Introduction
-
 C++ step instrumenter (cppstepin) tool is designed for instrumenting C++ code with counting of executing operations, or steps. This tool scans source code, computes a number of steps into every statement and inserts the function call, to which it passes a number of executed steps as input parameter. The step can be arithmetic, logical, bitwise expression, function call, memory manage operation, etc. 
 
 # How does it works?
